@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Diet
+{% endblock %}
+
+{% block mainText %}
+<h2>Diet Page</h2>
+<p>Enter in the form of "quantity unit item"</p>
+<p>Place each item on a new line</p>
+<p>Use generic names, like "potato chips", instead of "brand named chips"</p>
+<form name="diet_form">
+    <label> What did you have for breakfast: </label> <Br>
+    <textarea placeholder="For example: 1 serving peanut butter and jelly sandwich" name="breakfast" rows="4" cols="50" id="breakfast"></textarea>
+    <br>
+    
+    <label> Lunch: </label> <Br>
+    <textarea placeholder="For example: 1 cup rice" name="lunch" rows="4" cols="50" id="lunch"></textarea>
+    <br>
+
+    <label> Dinner: </label> <Br>
+    <textarea placeholder="For example: 2 lb pork chop" name="dinner" rows="4" cols="50" id="dinner"></textarea>
+    <br>
+    
+    <label> Snacks: </label> <Br>
+    <textarea placeholder="For example: 10 gram chocolate" name="snacks" rows="4" cols="50" id="snacks"></textarea>
+    <br>
+
+    <input type="submit" value="Submit" onclick=
+        "analyzeDiet(document.getElementById('breakfast').value, 
+                    document.getElementById('lunch').value, 
+                    document.getElementById('dinner').value, 
+                    document.getElementById('snacks').value)" >
+</form> 
+{% endblock %}

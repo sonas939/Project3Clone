@@ -1,0 +1,75 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Quiz
+{% endblock %}
+
+{% block mainText %}
+<h2>Quiz Page</h2>
+
+<form action="" method="post">
+{% csrf_token %}
+
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" name="lname"><br><br>
+
+
+<div>
+   <h3>What would you like to improve in your daily lifestyle? (Check all that apply)</h3>
+   <input type="radio"  value="eating" name="eating">Eating Healthy<br>
+   <input type="radio"  value="exercise" name="exercise">Exercising Regularly<br>
+   <input type="radio"  value="habits" name="habits">Maintaining Habits<br>
+   <br>
+</div>    
+<div>
+    <h3>Do you have any pre-existing conditions?</h3>
+    <input type="radio" value="diabetes" name="diabetes">Diabetes<br>
+    <input type="radio" value="cardiovascular" name="cardiovascular">Cardiovascular Disease<br>
+    <input type="radio" value="underweight" name="underweight">Underweight<br>
+    <input type="radio" value="overweight" name="overweight">Overweight<br>
+    <input type="radio" value="pre-existing-other" name="pre-existing-other">Other<br>
+    <br>
+ </div>    
+ <div>
+    <h3>Do you have any dietary restrictions?</h3>
+    <input type="radio" name="vegetarian" value="vegetarian">Vegetarian<br>
+    <input type="radio" name="vegan" value="vegan">Vegan<br>
+    <input type="radio" name="gluten-free" value="gluten-free">Gluten-Free<br>
+    <input type="radio" name="allergies" value="allergies">Allergies<br>
+    <input type="radio" name="pescatarian" value="pescatarian">Pescatarian<br>
+    <input type="radio" name="lactose-intolerant" value="lactose-intolerant">Lactose-Intolerant<br>
+    <input type="radio" name="dietary-other" value="dietary-other">Other<br>
+    <br>
+ </div>    
+ <div>
+    <h3>What workouts would you like?</h3>
+    <input type="radio" name="high-intensity" value="high-intensity">High Intensity<br>
+    <input type="radio" name="low-intensity" value="low-intensity">Low-Intensity<br>
+    <input type="radio" name="cardio" value="cardio">Cardio<br>
+    <input type="radio" name="dance" value="dance">Dance<br>
+    <input type="radio" name="strength-training" value="strength-training">Strength-Training<br>
+    <input type="radio" name="yoga" value="yoga">Yoga<br>
+    <input type="radio" name="pilates" value="pilates">Pilates<br>
+    
+    <br>
+ </div>    
+ <div>
+    <h3>What areas of the body would you like to target?</h3>
+    <input type="radio" name="arms" value="arms">Arms<br>
+    <input type="radio" name="chest" value="chest">Chest<br>
+    <input type="radio" name="lower-leg" valueFull Body="lower-leg">Lower Leg<br>
+    <input type="radio" name="upper-leg" value="upper-leg">Upper Leg<br>
+    <input type="radio" name="core" value="core">Core<br>
+    <input type="radio" name="full-body" value="full-body">Full Body<br>
+    <br>
+ </div>  
+    <br><br>
+    <input type="Submit" value="Submit">
+
+</form>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Analyze Diet
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function() {
+    myFunction_set(20, 80, 90, 100, 110, 120, 220);
+}
+</script>
+{% endblock%}
+
+{% block mainText %}
+<h2>Pie Chart</h2>
+<div class="piechart"> </div>
+<Br>
+<div>
+    <ul id="twoCol">
+        <li class="li"> <p id="legend" style="color: pink"> &#9632 </p> Fruit</li>
+        <li class="li"> <p id="legend" style="color: darkseagreen"> &#9632 </p> Vegetable</li>
+        <li class="li"> <p id="legend" style="color: orange;"> &#9632 </p> Grain</li>
+        <li class="li"> <p id="legend" style="color: lightblue"> &#9632 </p> Protein</li>
+        <li class="li"> <p id="legend" style="color: floralwhite"> &#9632 </p> Dairy</li>
+        <li class="li"> <p id="legend" style="color: mediumorchid"> &#9632 </p> Sodium</li>
+        <li class="li"> <p id="legend" style="color: moccasin"> &#9632 </p> Saturated Fat</li>
+        <li class="li"> <p id="legend" style="color: midnightblue"> &#9632 </p> Sugar</li>
+    </ul>
+  </div>
+{% endblock %}

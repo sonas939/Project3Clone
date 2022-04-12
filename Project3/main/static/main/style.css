@@ -1,0 +1,175 @@
+:root {
+	--fruit: ;
+	--vegetable: 0;
+	--grain:0; 
+	--protein: 0; 
+	--dairy: 0; 
+	--sodium: 0;
+	--saturated_fat: 0; 
+	--sugar: 0; 
+  }
+
+div {
+	display: block; 
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+	line-height: 1.88889;
+	color: black; 
+	background: white; 
+	margin: 0; 
+	margin-top: 20px; 
+	padding: 0;
+}
+
+#body{
+	min-height:70vh; 
+}
+
+#legend { 
+	border:2px; border-style:solid; border-color: black; color: pink; display: inline-block;
+}
+
+.headerBackground{
+	height: 100%; 
+    width: 200px;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    color: white; 
+    background-color: #500000; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
+
+.mainText{
+    padding-top: 5%; 
+	padding-left: 10%;
+	padding-right: 10%; 
+	margin-bottom: 80px; 
+    margin-left: 200px;
+}
+
+.mainText a:link {
+	color: #500000; 
+}
+
+.mainText a:visited{
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #500000;
+}
+
+.mainText a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: black;
+}
+
+h1{
+	padding-left: 10%;
+	margin: 0; 
+	color: white
+}
+
+h3 { 
+	letter-spacing: 1px; 
+	margin: 0; 
+	color: black;
+}
+
+a {
+	padding-right: 8px;
+}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: White;
+}
+
+a:visited{
+	font-weight: bold; 
+	text-decoration: none; 
+	color: white;
+}
+
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: white;
+}
+
+ul {
+	padding-left: 10%;
+	line-height: 1.88889;
+	margin: 0;
+}
+
+#twoCol{
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+}
+
+.li {
+	display: block;
+}
+
+footer {
+	text-align: left;
+	padding: 30px;
+	padding-left: 10%; 
+	background-color: #d1d1d1;
+	color: e0fbfc;
+	height: 170px; 
+    margin-left: 200px;
+}
+
+footer a:link {
+	color: #500000; 
+}
+
+footer a:visited{
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #500000;
+}
+
+footer a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: black;
+}
+
+footer h4 {
+    position: fixed; 
+    z-index: 1; 
+    top: 5%; 
+    right: 5%;
+}
+
+.resize {
+    width: 300px;
+    height: auto;
+}
+
+.piechart {
+	margin-top: 10px;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	background-image: conic-gradient(
+		pink var(--fruit),
+		darkseagreen var(--vegetable), 
+		orange var(--grain), 
+		lightblue var(--protein), 
+		floralwhite var(--dairy), 
+		mediumorchid var(--sodium), 
+		moccasin var(--saturated_fat), 
+		midnightblue var(--sugar));
+}
+
